@@ -1,0 +1,12 @@
+#ifndef GEOPLUGIN_GLOBAL_H
+#define GEOPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef QGEO_PLUGIN_EXPORTS
+# define GEOPLUGIN_EXPORT Q_DECL_EXPORT
+#else
+# define GEOPLUGIN_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // GEOPLUGIN_GLOBAL_H
